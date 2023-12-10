@@ -1,85 +1,164 @@
 <!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <title>Car Compare</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Car Comparison Website">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="John Douglass">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <!-- Google tag (gtag.js) -->
+<html lang="en">
+<head>
+<style>
+.banner {
+background-image: url(photos/ToyotaPickupBanner.jpg);
+background-size: 100%
+}
+
+section h1 {
+color: white;
+font-size: xx-large;
+text-align: center;
+margin-top: 35%;
+margin-bottom: 25px;
+}
+
+section h3 {
+color: white;
+font-size: large;
+text-align: center;
+margin-bottom: 25px;
+}
+
+section h2 {
+color: blue;
+margin-top: 30px;
+margin-left: 60px;
+margin-right: 60px;
+}
+
+/*Main*/
+main {
+background-color: #ffffff;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 60px;
+gap: 30px;
+}
+
+/*Category Titles*/
+main h1 {
+text-align: left;
+margin-top: 20px;
+margin-bottom: 5px;
+grid-column: span 2;
+}
+
+/*Grid Divs for Cars*/
+main div {
+text-align: center;
+background-color: #e6e6e6 ;
+padding: 20px;
+border-radius: 10px;
+}
+
+/*Car images*/
+main img {
+max-height: auto;
+width: 100%;
+object-fit: cover;
+border-radius: 10px;
+}
+
+/*Car names*/
+main h3 {
+margin-top: 10px;
+font-size: 16px;
+cursor: pointer;
+transition: color 0.5s;
+}
+
+main p {
+text-align:left;
+}
+
+/*Hover color change for car names*/
+main h3:hover {
+color: #3366ff;
+}
+
+main h3 a {
+text-decoration: none;
+color: black;
+transition: color 0.5s;
+}
+
+main h3 a:hover {
+color: #3366ff;
+}
+
+</style>
+<title>Car Compare</title>
+<meta charset="UTF-8">
+<meta name="description" content="Car Comparison Website">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="John Douglass">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" type="text/css" href="CCWstyles.css">
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FT71FP8ZMM"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FT71FP8ZMM');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-FT71FP8ZMM');
 </script>
-    <body>
-           <header>
-                <image src="images/carCompareWebsiteLogoSketch.jpg" width="200" 
-                height="200"></image><!--Logo-->
-                <p><h1>Car Compare</h1></p>
-                <nav>
-                    <ol>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="comparison.html">Compare</a></li>
-                        <li><a href="questions.html">Contact</a></li>
-                    </ol>
-                </nav>
-           </header>
-           <main>
-                <div>
-                    <image src="images/carCompareWebsiteFrontBannerToyotaTruckLineup2024.jpg" width="auto" 
-                    height="500"></image><!--banner-->
-                    <p>
-                        Toyota's New and improved truck lineup, featuring the beloved Tundra and Tacoma better than ever before. The next-generation Tacoma is the headliner, offering a new powertrain lineup and overlanding Trailhunter trim.
-                    </p>
-                </div>
-                <div>
-                    <h2>Welcome to CarCompare.com, your go to website to find the perfect car for you and your needs!</h2>
-                </div>
-                <div>
-                    <h3>Below are two of the most popular models of the year. Great options for any family.</h3>
-                    <image src="images/carCompareWebsiteComparisonExample1HondaCRV2024.png" width="auto" 
-                    height="300"></image><!--comparison example 1-->
-                        <h3>Honda CRV 2024</h3>
-                        <p>Transmission: Continuously variable-speed automatic <br>
-                            Drive Type: All wheel Drive <br>
-                            Engine Type: Inline 4 1.5L Gas <br>
-                            Power: 190Hp @ 6,000 rpm 179 lb-ft @ 1,700 rpm <br>
-                            Warranty: 3 year/36,000 mi
-                        </p>
-                <div>
-                <div>
-                    <p>
-                        V.S.
-                    </p>
-                </div>
-                </div>
-                <div>
-                    <image src="images/carCompareWebsiteComparisonExample1ToyotaCHR2023.png" width="auto" 
-                    height="250"></image><!--comparison example 2-->
-                        <h3>Toyota CHR 2023</h3>
-                        <p>Transmission: Continuously variable-speed automatic <br>
-                            Drive Type: Front Wheel Drive <br>
-                            Engine Type: Inline 4 1.5L Gas <br>
-                            Power: 184Hp @ 5,200 rpm 140 lb-ft @ 4,400rpm <br>
-                            Warranty: 3 year/36,000 mi
-                        </p>
-                </div>
-                <div>
-                <h3>CarComparison.com</h3>
-                </div>
-           </main>
-           <footer>
-            <image src="images/carCompareWebsiteLogoSketch.jpg" width="100" height="100"></image><br>
-            CarComparison.com<br>
-            Contact Us<br>
-            &#169; John Douglass, University of South Carolina 2023
-           </footer>
-    </body>
+<body>
+    <header>
+        <img src="photos/carCompareWebsiteLogoSketch.jpg" alt="Logo">
+        <h1>Car Compare</h1>
+        <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="comparison.html">Compare</a></li>
+                    <li><a href="questions.html">Contact</a></li>
+                </ul>
+        </nav>
+     </header>
+<section>
+    <div class="banner">
+        <br>
+        <h1>Toyotas 2023 Truck Lineup</h1>
+        <h3>the tacoma and tundra back and better than ever before with an all new look and all new powertrain.</h3>
+        <br>
+    </div>
+</section>
+<section>
+    <h2>Welcome to CarCompare.com, your go to website to find the perfect car for you and your needs!</h2>
+</section>
+<main>
+    <h1>Below are two of the most popular models of the year.</h1>
+    <div><img src="photos/cars/HondaCivic.jpg" alt="Honda Civic"> 
+    <h3><a href="hondaCivic.html">Honda Civic</a></h3>
+    <p>
+    Transmission Type: Continuously variable-speed automatic <br>
+    Drive Type: Front Wheel Drive <br>
+    Engine Type: Inline 4 1.5L Gas <br>
+    Power: 158Hp @ 6,600 rpm 160 lb-ft @ 1,700 rpm <br>
+    Warranty: 3 year/36,000 mi
+    Reliability Rating: 4.5/5.0
+    </p>
+    </div>
+    <div><img src="photos/cars/HondaAccord.jpg" alt="Honda Accord"> 
+    <h3>Honda Accord</h3>
+    <p>
+    Transmission Type: Continuously variable-speed automatic <br>
+    Drive Type: All wheel Drive <br>
+    Engine Type: Inline 4 1.5L or 2.0L Gas <br>
+    Power: 192Hp @ 6,500 rpm 134 lb-ft @ 1,900 rpm <br>
+    Warranty: 3 year/36,000 mi
+    Reliability Rating: 4.4/5.0
+    </p>
+    </div>
+    </main>
+</main>
+<footer>
+    <image src="photos/carCompareWebsiteLogoSketch.jpg"></image>
+    <p>Copyright &#169; 2023 John Douglass, University of South Carolina</p>
+</footer>
+</body>
 </html>
