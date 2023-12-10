@@ -1,0 +1,63 @@
+/*Background color and font*/
+body {
+font-family: monospace;
+background-color: #ffffff;
+margin: 0;
+padding: 0;
+}
+    
+/*Header for nav bar and logo*/
+header {
+justify-content: center;
+align-items: center;
+display: flex;
+padding: 20px 40px;
+background-color: #ccd9ff;
+}
+    
+/*Logo*/
+header img {
+height: 80px;
+border-radius:50%;
+}
+header h1 {
+font-size: 35;
+font-weight:bold;
+margin-left: 25px;
+margin-right: 100px;
+}
+    
+/*Navigation*/
+nav ul {
+list-style-type: none;
+text-align:center;
+display: flex;
+gap: 50px;
+font-size: 20px;
+}
+nav a {
+text-decoration: none;
+color: black;
+transition: color 0.5s;
+}
+
+nav a:hover {
+color: #3366ff;
+transform: scale(1.2);
+}
+
+/*Footer*/
+footer{
+background-color: #ccd9ff;
+display: flex;
+align-items: center;
+padding: 20px 40px;
+justify-content: center
+}
+
+/*Footer Logo*/
+footer img{
+height: 80px;
+border-radius:50%;
+margin-right:10%
+}
