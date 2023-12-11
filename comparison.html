@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/*Main*/
+main {
+background-color: #ffffff;
+grid-template-columns: repeat(4, 1fr);
+display: grid;
+padding: 60px;
+gap: 30px;
+}
+
+/*Category Titles*/
+main h1 {
+text-align: left;
+margin-top: 20px;
+margin-bottom: 5px;
+grid-column: span 4;
+}
+
+/*Grid Divs for Cars*/
+main div {
+text-align: center;
+background-color: #e6e6e6 ;
+padding: 20px;
+border-radius: 10px;
+}
+
+/*Car images*/
+main img {
+max-height: 250px;
+width: 100%;
+object-fit: cover;
+border-radius: 10px;
+}
+
+/*Car names*/
+main p {
+margin-top: 10px;
+font-size: 16px;
+cursor: pointer;
+transition: color 0.5s;
+}
+
+/*Hover color change for car names*/
+main p:hover {
+color: #3366ff;
+}
+
+main p a {
+text-decoration: none;
+color: black;
+transition: color 0.5s;
+}
+
+main p a:hover {
+color: #3366ff;
+}
+
+</style>
+<title>Car Compare</title>
+<meta charset="UTF-8">
+<meta name="description" content="Car Comparison Website">
+<meta name="keywords" content="HTML, CSS, JavaScript, Cars, Honda, Toyota, Mazda, Nissan, Sports Cars, SUVs, Sedans, Car, Comparison, Compare, Car Compare, Car Comparisson, Family Cars,">
+<meta name="author" content="John Douglass">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" type="text/css" href="CCWstyles.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FT71FP8ZMM"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-FT71FP8ZMM');
+</script>
+<body>
+    <header>
+        <img src="photos/carCompareWebsiteLogoSketch.jpg" alt="Logo">
+        <h1>Car Compare</h1>
+        <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="comparison.html">Compare</a></li>
+                    <li><a href="questions.html">Contact</a></li>
+                </ul>
+        </nav>
+     </header>
+<main>
+    <h1>Latest Sedan Models</h1> 
+    <div><img src="photos/cars/HondaCivic.jpg" alt="Honda Civic"> 
+    <p><a href="hondaCivic.html">Honda Civic</a></p></div>
+    <div><img src="photos/cars/HondaAccord.jpg" alt="Honda Accord"> 
+    <p>Honda Accord</p></div>
+    <div><img src="photos/cars/ToyotaCorolla.jpg" alt="Toyota Corolla"> 
+    <p>Toyota Corolla</p></div>
+    <div><img src="photos/cars/ToyotaCamry.jpg" alt="Toyota Camry"> 
+    <p>Toyota Camry</p></div>
+    <div><img src="photos/cars/NissanAltima.jpg" alt="Nissan altima"> 
+    <p>Nissan Altima</p></div>
+    <div><img src="photos/cars/Mazda6.jpg" alt="Mazda 6"> 
+    <p>Mazda 6</p></div>
+    <div><img src="photos/cars/ToyotaPrius.jpg" alt="Toyota Prius"> 
+    <p>Toyota Prius</p></div>
+    <div><img src="photos/cars/SubaruLegacy.jpg" alt="Subaru Legacy"> 
+    <p>Subaru Legacy</p></div>
+
+    <h1>Latest Sports Models</h1> 
+    <div><img src="photos/cars/ToyotaSupra.jpg" alt="Toyota Supra MKV"> 
+    <p>Toyota Supra MKV</p></div>
+    <div><img src="photos/cars/ToyotaGR86.jpg" alt="Toyota GR86"> 
+    <p>Toyota GR86</p></div>
+    <div><img src="photos/cars/MazdaMX-5.jpg" alt="Mazda MX-5"> 
+    <p>Mazda MX-5</p></div>
+    <div><img src="photos/cars/NissanZ.jpg" alt="Nissan Z">
+    <p>Nissan Z</p></div>
+
+    <h1>Latest SUVs</h1> 
+    <div><img src="photos/cars/HondaHR-V.jpg" alt="Honda HR-V"> 
+    <p>Honda HR-V</p></div>
+    <div><img src="photos/cars/LexusRX350.jpg" alt="Lexus RX350"> 
+    <p>Lexus RX350</p></div>
+    <div><img src="photos/cars/MazdaCX-5.jpg" alt="Mazda CX-5"> 
+    <p>Mazda CX-5</p></div>
+    <div><img src="photos/cars/ToyotaRav4.jpg" alt="Toyota Rav4">
+    <p>Toyota Rav-4</p></div>
+</main>
+<footer>
+    <image src="photos/carCompareWebsiteLogoSketch.jpg" alt="Logo"></image>
+    <p>Copyright &#169; 2023 John Douglass, University of South Carolina</p>
+</footer>
+</body>
+</html>
